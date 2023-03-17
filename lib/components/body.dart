@@ -46,6 +46,8 @@ class Body extends StatelessWidget {
                       hintStyle: TextStyle(
                         color: PrimaryColor.withAlpha(255),
                       ),
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
                     ),
                   ),
                 ),
