@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_mall/components/header_with_searchbox.dart';
 import 'package:shopping_mall/constants.dart';
+import 'package:shopping_mall/components/title_with_more_btn.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -10,21 +11,7 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           HeaderWithSearchBox(size: size),
-          Container(
-            height: 24,
-            child: Stack(
-              children: <Widget>[
-                Text(
-                  'Recommanded',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Container(height: 7, color: PrimaryColor),
-              ],
-            ),
-          ),
+          TitleWithMoreBtn(title: 'Recommended', press: () {}),
         ],
       ),
     );
